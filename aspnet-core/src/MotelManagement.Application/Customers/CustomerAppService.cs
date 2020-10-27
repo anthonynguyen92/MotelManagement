@@ -17,6 +17,5 @@ namespace MotelManagement.Customers
         public CustomerAppService(IRepository<Customer, Guid> repository) : base(repository)
         {
         }
-        
     }
 }

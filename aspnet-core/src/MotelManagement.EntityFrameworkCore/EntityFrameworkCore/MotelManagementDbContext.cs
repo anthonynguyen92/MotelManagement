@@ -22,6 +22,9 @@ namespace MotelManagement.EntityFrameworkCore
     public class MotelManagementDbContext : AbpDbContext<MotelManagementDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Motel> Motels { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside MotelManagementDbContextModelCreatingExtensions.ConfigureMotelManagement
@@ -59,9 +62,9 @@ namespace MotelManagement.EntityFrameworkCore
                 b.ConfigureByConvention();
             });
 
-            builder.Entity<Student>(b =>
+            builder.Entity<Motel>(b =>
             {
-                b.ToTable("Student");
+                b.ToTable("Motel");
                 b.ConfigureByConvention();
             });
 

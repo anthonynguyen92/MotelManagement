@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MotelManagement.Entites;
 using MotelManagement.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -41,16 +42,28 @@ namespace MotelManagement.EntityFrameworkCore
             builder.Entity<AppUser>(b =>
             {
                 b.ToTable(AbpIdentityDbProperties.DbTablePrefix + "Users"); //Sharing the same table "AbpUsers" with the IdentityUser
-                
+
                 b.ConfigureByConvention();
                 b.ConfigureAbpUser();
-
-                /* Configure mappings for your additional properties
-                 * Also see the MotelManagementEfCoreEntityExtensionMappings class
-                 */
             });
 
-            /* Configure your own tables/entities inside the ConfigureMotelManagement method */
+            builder.Entity<Customer>(b =>
+            {
+                b.ToTable("Customer");
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Student>(b =>
+            {
+                b.ToTable("Student");
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Student>(b =>
+            {
+                b.ToTable("Student");
+                b.ConfigureByConvention();
+            });
 
             builder.ConfigureMotelManagement();
         }

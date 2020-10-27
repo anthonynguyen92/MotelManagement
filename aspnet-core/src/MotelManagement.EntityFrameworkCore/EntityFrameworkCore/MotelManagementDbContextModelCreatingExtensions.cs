@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MotelManagement.Entites;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace MotelManagement.EntityFrameworkCore
 {
@@ -9,14 +11,23 @@ namespace MotelManagement.EntityFrameworkCore
         {
             Check.NotNull(builder, nameof(builder));
 
-            /* Configure your own tables/entities inside here */
+            builder.Entity<Customer>(b =>
+            {
+                b.ToTable("Customer");
+                b.ConfigureByConvention();
+            });
 
-            //builder.Entity<YourEntity>(b =>
-            //{
-            //    b.ToTable(MotelManagementConsts.DbTablePrefix + "YourEntities", MotelManagementConsts.DbSchema);
-            //    b.ConfigureByConvention(); //auto configure for the base class props
-            //    //...
-            //});
+            builder.Entity<Student>(b =>
+            {
+                b.ToTable("Student");
+                b.ConfigureByConvention();
+            });
+
+            builder.Entity<Motel>(b =>
+            {
+                b.ToTable("Motel");
+                b.ConfigureByConvention();
+            });
         }
     }
 }

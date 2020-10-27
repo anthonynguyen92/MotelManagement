@@ -50,24 +50,6 @@ namespace MotelManagement.EntityFrameworkCore
                 b.ConfigureAbpUser();
             });
 
-            builder.Entity<Customer>(b =>
-            {
-                b.ToTable("Customer");
-                b.ConfigureByConvention();
-            });
-
-            builder.Entity<Student>(b =>
-            {
-                b.ToTable("Student");
-                b.ConfigureByConvention();
-            });
-
-            builder.Entity<Motel>(b =>
-            {
-                b.ToTable("Motel");
-                b.ConfigureByConvention();
-            });
-
             builder.ConfigureMotelManagement();
         }
     }

@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MotelManagement.Motels.Dto;
+using System;
 
 namespace MotelManagement.Motels
 {
-    public interface IMotelAppService
+    public interface IMotelsAppService : IBaseAppService<
+        Guid, CreateUpdateMotelDto, GetMotelDto, GetMotelForEditDto, GetMotelForInputDto>
     {
     }
 }

@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MotelManagement.Students.Dto;
+using System;
 
 namespace MotelManagement.Students
 {
-    interface IStudentAppService
+    public interface IStudentAppService : IBaseAppService<
+        Guid, CreateUpdateStudentDto, GetStudentDto, GetStudentForEditDto, GetStudentForInputDto>
     {
     }
 }

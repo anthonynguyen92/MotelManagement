@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà trọ OU</title>
+    <link rel="stylesheet" type="text/css" href="/css/leaseform.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- START NAVIGATION BAR -->
+    <header>
+        <a href="#" class="header__logo">Open Motel</a>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="/html/homepage.html">Trang chủ</a></li>
+                <li><a href="/html/findmotel.html">Tìm trọ</a></li>
+                <li class="active"><a href="/html/leasemotel.html">Cho thuê</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+                <form class="search_form">
+                    <input type="text" class="searchbox" placeholder="Tìm kiếm ở đây">
+                    <button class="search__button">Search</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+  <!-- END NAVIGATION BAR -->
+<!-- BODY -->
+<!-- START FILL FORM -->
+    <div class="form_container">
+        <form action="">
+            <h3>Điền thông tin liên hệ</h3>
+            <div class="form_control">
+                <label for="name">Họ tên</label>
+                <input class="fillin" type="text" placeholder="Họ tên">
+            </div>
+            <div class="form_control">
+                <label for="phonenumber">Số điện thoại</label>
+                <input class="fillin" type="text" placeholder="Số điện thoại">
+            </div>
+            <div class="form_control">
+                <label for="email">Email</label>
+                <input class="fillin" type="text" placeholder="Email">
+            </div>
+        
+            <h3>Thông tin phòng trọ</h3>
+            <div class="form_control">
+                <label for="street">Đường</label>
+                <input class="fillin" type="text" placeholder="97 Võ Văn Tần">
+            </div>
+            <div class="form_control">
+                <label for="district">Quận/Huyện</label>
+                <select class="fillin" name="ward" >
+                    <option class="fillin" value="1">Quận 1</option>
+                    <option value="1">Quận 2</option>
+                    <option value="1">Quận 3</option>
+                    <option value="1">Quận 4</option>
+                    <option value="1">Quận 5</option>
+                    <option value="1">Quận 6</option>
+                    <option value="1">Quận 7</option>
+                    <option value="1">Quận 8</option>
+                    <option value="1">Quận 9</option>
+                    <option value="1">Quận 10</option>
+                    <option value="1">Quận 11</option>
+                    <option value="1">Quận 12</option>
+                    <option value="1">Quận Phú Nhuận</option>
+                </select>
+            <div class="form_control">
+                <label for="ward">Phường/Xã</label>
+                <input class="fillin" type="text" placeholder="Phường/Xã">
+            </div>
+        
+            <div class="form_control">
+                <label for="space">Diện tích(m<sup>2</sup>)</label>
+                <input class="fillin" type="text" placeholder="Diện tích">
+            </div>
+            <div class="form_control">
+                <label for="amenities">Tiện ích</label>
+                <input class="fillin" type="text" placeholder="Tiện ích">
+            </div>
+            <div class="form_control">
+                <label for="curfew">Giờ giới nghiêm</label>
+                <input class="fillin" type="text" placeholder="Giờ giới nghiêm">
+            </div>
+        </form>
+    </div>
+<!-- END FILL FORM -->
+<!-- END BODY -->
+  
+</body>
+</html>

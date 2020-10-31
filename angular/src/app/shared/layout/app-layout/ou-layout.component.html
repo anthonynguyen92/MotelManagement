@@ -1,0 +1,19 @@
+<div>
+  <header>
+    <a href="#" class="header__logo home-page">Open Motel</a>
+    <nav class="header__nav">
+      <ul>
+        <li [routerLinkActive]="'active'"><a [routerLink]="'./home'">Trang chủ</a></li>
+        <li><a href="javascript:void(0)">Tìm trọ</a></li>
+        <li><a href="javascript:void(0)">Cho thuê</a></li>
+        <li><a href="javascript:void(0)">Đăng nhập</a></li>
+        <form class="search-form">
+          <input type="text" placeholder="Tìm kiếm ở đây">
+          <button class="search__button">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<router-outlet></router-outlet>

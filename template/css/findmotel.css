@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: montserrat;
+}
+
+body {
+  width: 100%;
+}
+
+/* header css */
+header {
+  background: #263364;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  height: 50px;
+}
+.header__nav ul {
+  display: flex;
+}
+
+.header__logo {
+  color: white;
+  font-size: 2.7rem;
+  text-decoration: none;
+  margin-right: 10%;
+  font-weight: 600;
+}
+
+.header__nav ul li a {
+  color: #a7a4a4;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 10px 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header__nav ul li.active a {
+  color: white;
+}
+.header__nav ul li a:hover {
+  color: white;
+}
+
+.search-form {
+  display: inline;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  padding: 9px;
+  border: none;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 15px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.search__button {
+  margin-left: 15px;
+  font-size: 15px;
+  background: #c8791a;
+  width: 90px;
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background: #ef9122;
+}
+/* end header */
+/* start ABOUT*/
+.about {
+  background-color: #3e4a69;
+  height: 250px;
+
+  text-align: center;
+  padding: 50px 0;
+  color: #fdfdfd;
+}
+.about__content h1 {
+  font-size: 3rem;
+  margin-top: 0px;
+}
+.about__content p {
+  text-align: center;
+  margin: 15px;
+  padding: 0px 0;
+  font-size: 2rem;
+}
+
+.btn {
+  color: black;
+  font-size: 2rem;
+  position: relative;
+  padding: 20px 35px;
+  border: none;
+
+  bottom: -60px;
+  font-weight: 500;
+  background: #cccdd4;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  color: #2a4997;
+  font-size: 2rem;
+  background: white;
+  cursor: pointer;
+}
